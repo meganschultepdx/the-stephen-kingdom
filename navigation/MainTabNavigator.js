@@ -4,8 +4,8 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import SplashScreen from '../screens/SplashScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import MovieInfoScreen from '../screens/MovieInfoScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -35,42 +35,42 @@ SplashStack.navigationOptions = {
 
 SplashStack.path = '';
 
-const LinksStack = createStackNavigator(
+const MovieInfoStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    MovieInfo: MovieInfoScreen,
   },
   config
 );
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+MovieInfoStack.navigationOptions = {
+  tabBarLabel: 'MovieInfo',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
   ),
 };
 
-LinksStack.path = '';
+MovieInfoStack.path = '';
 
-const SettingsStack = createStackNavigator(
+const AboutStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    About: AboutScreen,
   },
   config
 );
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+AboutStack.navigationOptions = {
+  tabBarLabel: 'About',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
   ),
 };
 
-SettingsStack.path = '';
+AboutStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   SplashStack,
-  LinksStack,
-  SettingsStack,
+  MovieInfoStack,
+  AboutStack,
 });
 
 tabNavigator.path = '';
