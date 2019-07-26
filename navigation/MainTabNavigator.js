@@ -43,7 +43,7 @@ const MovieInfoStack = createStackNavigator(
 );
 
 MovieInfoStack.navigationOptions = {
-  tabBarLabel: 'MovieInfo',
+  tabBarLabel: 'Movie Resource',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
   ),

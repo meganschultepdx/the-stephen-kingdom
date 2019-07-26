@@ -1,21 +1,36 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import {
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+
 
 export default function MovieInfoScreen() {
   return (
     <ScrollView style={styles.container}>
-      {/**
-       * Go ahead and delete ExpoLinksView and replace it with your content;
-       * we just wanted to provide you with some helpful links.
-       */}
-      <ExpoLinksView />
+      <View style={styles.welcomeContainer}>
+          <Text style={styles.getStartedText}>
+            WELCOME TO THE KINGDOM!
+          </Text>
+          <Text style={styles.about}>
+            {`
+Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature?
+How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? 
+Well, click on the movie posters below to find out more info on each! 
+`}
+          </Text>
+          </View>
     </ScrollView>
   );
 }
 
 MovieInfoScreen.navigationOptions = {
-  title: 'Movie Info',
+  title: 'movie & mini-series resource page',
 };
 
 const styles = StyleSheet.create({
