@@ -1,20 +1,24 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function SplashTitle() {
+export default function SplashSubtitle() {
 
   return (
   
-  <Text style={styles.splashTitle}>the stephen kingdom</Text>
+  <Text style={styles.splashSubtitle}>{`- for all related 
+
+  movies & mini-series -`}</Text>
   );
 }
 
 const styles = StyleSheet.create({
-  splashTitle: {
+  splashSubtitle: {
     color: 'white',
     textAlign: 'center',
-    fontSize: 28,
+    fontSize: 18,
     textTransform: 'uppercase',
+    paddingTop: 40,
   }
+
 
 });

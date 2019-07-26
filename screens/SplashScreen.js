@@ -11,6 +11,7 @@ import {
   Dimensions
 } from 'react-native';
 import SplashTitle from '../components/SplashTitle'
+import SplashSubtitle from '../components/SplashSubtitle'
 
 import { MonoText } from '../components/StyledText';
 
@@ -34,7 +35,9 @@ export default function SplashScreen() {
         </View>
         <View style={styles.title}>
         <SplashTitle />
+        <SplashSubtitle />
         </View>
+        
       
       </ScrollView>
 
