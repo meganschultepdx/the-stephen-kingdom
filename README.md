@@ -40,7 +40,7 @@
 
 ## Component Tree/Project Planning
 
-![](src/assets/imgages/layoutplan.jpg)
+![](src/assets/images/layoutplan.jpg)
 
 ## Known Bugs
 
