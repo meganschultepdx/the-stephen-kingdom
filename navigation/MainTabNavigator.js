@@ -20,8 +20,9 @@ const SplashStack = createStackNavigator(
 );
 
 SplashStack.navigationOptions = {
-  tabBarLabel: 'Splash',
-  tabBarIcon: ({ focused }) => (
+  tabBarLabel: 'Home',
+  /*tabBarIcon: ({ focused }) => (
+    
     <TabBarIcon
       focused={focused}
       name={
@@ -30,7 +31,7 @@ SplashStack.navigationOptions = {
           : 'md-information-circle'
       }
     />
-  ),
+  ),*/
 };
 
 SplashStack.path = '';
@@ -44,9 +45,9 @@ const MovieInfoStack = createStackNavigator(
 
 MovieInfoStack.navigationOptions = {
   tabBarLabel: 'Movie Resource',
-  tabBarIcon: ({ focused }) => (
+  /*tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
-  ),
+  ),*/
 };
 
 MovieInfoStack.path = '';
@@ -60,9 +61,9 @@ const AboutStack = createStackNavigator(
 
 AboutStack.navigationOptions = {
   tabBarLabel: 'About',
-  tabBarIcon: ({ focused }) => (
+  /*tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
-  ),
+  ),*/
 };
 
 AboutStack.path = '';
@@ -71,6 +72,7 @@ const tabNavigator = createBottomTabNavigator({
   SplashStack,
   MovieInfoStack,
   AboutStack,
+
 });
 
 tabNavigator.path = '';
