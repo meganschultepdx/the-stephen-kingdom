@@ -8,9 +8,15 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Dimensions
 } from 'react-native';
 
 import { MonoText } from '../components/StyledText';
+
+const dimensions = Dimensions.get('window');
+const imageHeight = Math.round(dimensions.width * 9 / 16);
+const imageWidth = dimensions.width;
+
 
 export default function SplashScreen() {
   return (
@@ -18,12 +24,12 @@ export default function SplashScreen() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
-        <View style={styles.welcomeContainer}>
+        <View style={styles.splashContainer}>
           <Image
             source={
                 require('../assets/images/stephen-king.jpg')
             }
-            style={styles.welcomeImage}
+            style={styles.splashImage}
           />
         </View>
 
@@ -109,7 +115,7 @@ function handleHelpPress() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -119,19 +125,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   contentContainer: {
-    paddingTop: 30,
+   
   },
   welcomeContainer: {
     alignItems: 'center',
-    marginTop: 10,
+    
     marginBottom: 20,
   },
-  welcomeImage: {
-    width: 100,
-    height: 80,
+  //top image of stephen king
+  splashImage: {
+    width: imageWidth,
     resizeMode: 'contain',
-    marginTop: 3,
-    marginLeft: -10,
+  
   },
   getStartedContainer: {
     alignItems: 'center',
