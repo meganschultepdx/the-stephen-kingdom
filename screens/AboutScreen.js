@@ -11,7 +11,6 @@ import {
   Dimensions
 } from 'react-native';
 
-import { MonoText } from '../components/StyledText';
 
 const dimensions = Dimensions.get('window');
 const imageHeight = Math.round(dimensions.width * 9 / 16);
@@ -38,11 +37,6 @@ export default function AboutScreen() {
     </View>
   );
 }
-
-AboutScreen.navigationOptions = {
-  title: 'A little about this app',
-};
-
 
 
 

@@ -35,10 +35,6 @@ async function loadResourcesAsync() {
       require('./assets/images/robot-prod.png'),
     ]),
     Font.loadAsync({
-      // This is the font that we are using for our tab bar
-      ...Ionicons.font,
-      // We include SpaceMono because we use it in HomeScreen.js. Feel free to
-      // remove this if you are not using it in your app
       'eighties-horror': require('./assets/fonts/EightiesHorror-yrJe.ttf'),
       'texgyreadventor-bold': require('./assets/fonts/texgyreadventor-bold.otf'),
     }),
@@ -58,6 +54,6 @@ function handleFinishLoading(setLoadingComplete) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
 });
