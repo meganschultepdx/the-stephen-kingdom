@@ -5,9 +5,10 @@ export default function SplashSubtitle() {
 
   return (
   
-  <Text style={styles.splashSubtitle}>{`- for all related 
-
-  movies & mini-series -`}</Text>
+  <View>
+  <Text style={styles.splashSubtitle}> for all related</Text>
+  <Text style={styles.splashSubtitle2}>movies & mini-series </Text>
+  </View>
   );
 }
 
@@ -18,6 +19,16 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textTransform: 'uppercase',
     paddingTop: 40,
+    fontFamily: 'texgyreadventor-bold',
+  },
+  splashSubtitle2: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 18,
+    textTransform: 'uppercase',
+    paddingTop: 40,
+    fontFamily: 'texgyreadventor-bold',
+    paddingTop: -17,
   }
 
 

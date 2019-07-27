@@ -40,6 +40,7 @@ async function loadResourcesAsync() {
       // We include SpaceMono because we use it in HomeScreen.js. Feel free to
       // remove this if you are not using it in your app
       'eighties-horror': require('./assets/fonts/EightiesHorror-yrJe.ttf'),
+      'texgyreadventor-bold': require('./assets/fonts/texgyreadventor-bold.otf'),
     }),
   ]);
 }
