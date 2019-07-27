@@ -1,11 +1,13 @@
 import React from 'react';
-import { Platform } from 'react-native';
+import { Platform, ActiveTintColor } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
 import SplashScreen from '../screens/SplashScreen';
 import MovieInfoScreen from '../screens/MovieInfoScreen';
 import AboutScreen from '../screens/AboutScreen';
+import { BorderlessButton } from 'react-native-gesture-handler';
+import { isUserWhitespacable } from '@babel/types';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -21,21 +23,9 @@ const SplashStack = createStackNavigator(
 
 SplashStack.navigationOptions = {
   tabBarLabel: 'Home',
-  style: {
-    color: 'red',
-  }
-
-  /*tabBarIcon: ({ focused }) => (
-    
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
-    />
-  ),*/
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-contrast' : 'md-contrast'} />
+  ),
 };
 
 SplashStack.path = '';
@@ -48,13 +38,10 @@ const MovieInfoStack = createStackNavigator(
 );
 
 MovieInfoStack.navigationOptions = {
-  tabBarLabel: 'Movie Resource',
-  style: {
-    color: 'red',
-  }
-  /*tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
-  ),*/
+  tabBarLabel: 'the list',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-film' : 'md-film'} />
+  ),
 };
 
 MovieInfoStack.path = '';
@@ -68,9 +55,9 @@ const AboutStack = createStackNavigator(
 
 AboutStack.navigationOptions = {
   tabBarLabel: 'About',
-  /*tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
-  ),*/
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-glasses' : 'md-glasses'} />
+  ),
 };
 
 AboutStack.path = '';
@@ -83,8 +70,18 @@ const tabNavigator = createBottomTabNavigator({
     tabBarOptions: {
       style: {
         backgroundColor: '#161717',
-        height: 65,
-      }
+        height: 75,
+        activeTintColor: 'black',
+      },
+      labelStyle: {
+        fontSize: 18,
+        textTransform: 'uppercase',
+        fontFamily: 'texgyreadventor-bold',
+        paddingBottom: 5,
+        color: 'orange',
+        opacity: .5,
+      },
+      
     }
   });
 

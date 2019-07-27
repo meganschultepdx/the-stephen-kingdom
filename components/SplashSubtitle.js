@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     textTransform: 'uppercase',
-    paddingTop: 40,
+    paddingTop: 25,
     fontFamily: 'texgyreadventor-bold',
     color: 'grey'
   },
@@ -27,11 +27,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     textTransform: 'uppercase',
-    paddingTop: 40,
     fontFamily: 'texgyreadventor-bold',
-    paddingTop: -17,
     color: 'grey'
   }
-
-
 });
