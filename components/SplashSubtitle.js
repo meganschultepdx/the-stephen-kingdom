@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     paddingTop: 40,
     fontFamily: 'texgyreadventor-bold',
+    color: 'grey'
   },
   splashSubtitle2: {
     color: 'white',
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     fontFamily: 'texgyreadventor-bold',
     paddingTop: -17,
+    color: 'grey'
   }
 
 

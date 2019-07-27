@@ -13,7 +13,6 @@ import {
 import SplashTitle from '../components/SplashTitle'
 import SplashSubtitle from '../components/SplashSubtitle'
 
-import { MonoText } from '../components/StyledText';
 
 const dimensions = Dimensions.get('window');
 const imageHeight = Math.round(dimensions.width * 9 / 16);

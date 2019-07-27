@@ -21,7 +21,10 @@ const SplashStack = createStackNavigator(
 
 SplashStack.navigationOptions = {
   tabBarLabel: 'Home',
-  
+  style: {
+    color: 'red',
+  }
+
   /*tabBarIcon: ({ focused }) => (
     
     <TabBarIcon
@@ -46,6 +49,9 @@ const MovieInfoStack = createStackNavigator(
 
 MovieInfoStack.navigationOptions = {
   tabBarLabel: 'Movie Resource',
+  style: {
+    color: 'red',
+  }
   /*tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
   ),*/
@@ -73,9 +79,17 @@ const tabNavigator = createBottomTabNavigator({
   SplashStack,
   MovieInfoStack,
   AboutStack,
-
-});
+}, {
+    tabBarOptions: {
+      style: {
+        backgroundColor: '#161717',
+        height: 65,
+      }
+    }
+  });
 
 tabNavigator.path = '';
 
-export default tabNavigator;
+export default tabNavigator
+
+
