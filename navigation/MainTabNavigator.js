@@ -21,6 +21,7 @@ const SplashStack = createStackNavigator(
 
 SplashStack.navigationOptions = {
   tabBarLabel: 'Home',
+  
   /*tabBarIcon: ({ focused }) => (
     
     <TabBarIcon

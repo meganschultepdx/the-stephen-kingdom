@@ -69,7 +69,8 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginTop: 10,
+    
+
   }
   
 

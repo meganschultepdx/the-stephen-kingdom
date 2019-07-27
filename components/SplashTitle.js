@@ -5,16 +5,38 @@ export default function SplashTitle() {
 
   return (
   
-  <Text style={styles.splashTitle}>the stephen kingdom</Text>
+  <View>
+  <Text style={styles.titleThe}>the</Text>
+  <Text style={styles.titleStephen}>stephen</Text>
+  <Text style={styles.titleKingdom}>kingdom</Text>
+  </View>
   );
 }
 
 const styles = StyleSheet.create({
-  splashTitle: {
+  titleThe: {
     color: 'white',
     textAlign: 'center',
-    fontSize: 28,
+    fontSize: 40,
     textTransform: 'uppercase',
+    fontFamily: 'eighties-horror',
+  },
+  titleStephen: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 40,
+    textTransform: 'uppercase',
+    fontFamily: 'eighties-horror',
+    marginTop: -17,
+  },
+  titleKingdom: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 40,
+    textTransform: 'uppercase',
+    fontFamily: 'eighties-horror',
+    marginTop: -17,
   }
+
 
 });
