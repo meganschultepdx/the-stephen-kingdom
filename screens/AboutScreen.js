@@ -18,18 +18,18 @@ const imageHeight = Math.round(dimensions.width * 9 / 16);
 const imageWidth = dimensions.width;
 
 
-export default function SplashScreen() {
+export default function AboutScreen() {
   return (
     <View style={styles.container}>
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
-        <View style={styles.splashContainer}>
+        <View style={styles.aboutContainer}>
           <Image
             source={
-                require('../assets/images/Stephen-King-cropped.png')
+                require('../assets/images/movie-collage.jpg')
             }
-            style={styles.splashImage}/>
+            style={styles.aboutImage}/>
         </View>
 
       
@@ -39,9 +39,10 @@ export default function SplashScreen() {
   );
 }
 
-SplashScreen.navigationOptions = {
-  header: null,
+AboutScreen.navigationOptions = {
+  title: 'A little about this app',
 };
+
 
 
 
@@ -54,16 +55,16 @@ const styles = StyleSheet.create({
   contentContainer: {
    
   },
-  splashContainer: {
+  aboutContainer: {
     alignItems: 'center',
     
     marginBottom: 20,
   },
   //top image of stephen king
-  splashImage: {
+  aboutImage: {
     width: imageWidth,
     resizeMode: 'contain',
-    marginTop: -30,
+    marginTop: 20,
   },
   
 

@@ -29,7 +29,7 @@ export default function SplashScreen() {
         <View style={styles.splashContainer}>
           <Image
             source={
-                require('../assets/images/Stephen-King-cropped.png')
+                require('../assets/images/36m0i5.gif')
             }
             style={styles.splashImage}/>
         </View>
