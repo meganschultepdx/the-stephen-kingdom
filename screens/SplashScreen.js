@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   splashImage: {
     width: imageWidth,
     resizeMode: 'contain',
-    marginTop: 20,
+    marginTop: 40,
   },
 
 });

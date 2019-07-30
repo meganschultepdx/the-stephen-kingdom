@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     textTransform: 'uppercase',
-    paddingTop: 25,
+    paddingTop: 35,
     fontFamily: 'texgyreadventor-bold',
     color: 'grey'
   },

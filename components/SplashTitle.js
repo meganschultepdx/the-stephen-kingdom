@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
-    marginTop: -17,
+    marginTop: -18,
   },
   titleKingdom: {
     color: 'white',
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
-    marginTop: -17,
+    marginTop: -18,
   }
 
 

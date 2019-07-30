@@ -49,7 +49,7 @@ Well, click on the movie posters below to find out more info on each!
 
 
 const styles = StyleSheet.create({
-  container: {
+  container: {  
     flex: 1,
     paddingTop: 15,
     backgroundColor: '#000',
