@@ -8,12 +8,14 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { db } from '../firebaseConfig'
 
 
-export default function MovieInfoScreen() {
-  return (
-    <ScrollView style={styles.container}>
-      <View>
+export default class MovieInfoScreen extends Component {
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+        <View>
           <Text style={styles.welcome}>
             welcome to the kingdom!
           </Text>
@@ -24,14 +26,13 @@ How about one that involved a lawsuit to get his name dissasociated with the pro
 Well, click on the movie posters below to find out more info on each! 
 `}
           </Text>
-          </View>
-    </ScrollView>
-  );
+          <Text>List</Text>
+        </View>
+      </ScrollView>
+    );
+  }
 }
 
-/*MovieInfoScreen.navigationOptions = {
-  title: 'movie & mini-series resource page',
-};*/
 
 const styles = StyleSheet.create({
   container: {
