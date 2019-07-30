@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Image } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -13,7 +13,8 @@ export default class MovieComponent extends Component {
         {this.props.movies.map((movie, index) => {
           return (
             <View key={index}>
-              <Text>{movie.image_url}</Text>
+              
+              <Image source={movie.image_url}></Image>
 
               <Text style={styles.title}>Title  |    {movie.title}</Text>
 
