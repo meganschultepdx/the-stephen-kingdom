@@ -30,21 +30,18 @@ export default class MovieInfoScreen extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-          <Text style={styles.welcome}>
-            welcome to the kingdom!
+        <Text style={styles.welcome}>
+          welcome to the kingdom!
           </Text>
-          <Text style={styles.info}>
-            {`
+        <Text style={styles.info}>
+          {`
 Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature?
 How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? 
 Well, click on the movie posters below to find out more info on each! 
 `}
-          </Text>
-                {this.state.movies.length > 0 ? (
-                  <MovieComponent movies={this.state.movies} />
-                ) : (
-                  <Text>No Movies</Text>
-                )}
+        </Text>
+        <MovieComponent movies={this.state.movies} />
+
       </ScrollView>
     );
   }

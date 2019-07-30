@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
+import ModalDisplay from '../components/ModalDisplay';
 
 export default class MovieComponent extends Component {
   static propTypes = {
     movies: PropTypes.array.isRequired
   };
 
+  state = {
+    display: false
+  }
+
+  triggerModal() {
+    this.setState(prevState => {
+      return {
+        display: true
+      }
+    });
+  }
+
   render() {
-    console.log(this.props.movies);
     return (
       <View style={StyleSheet.moviesList}>
         {this.props.movies.map((movie, index) => {
           return (
-            <View key={index}>
+            <ScrollView key={index}>
+              <View style = { styles.container }>
+              <Image onPress = { () => console.log('pic pressed') } style={{width: 130, height: 190}} source={{uri: movie.image_url}} />
+              </View>
+              <ModalDisplay
+              display = { this.state.display } />
               
-              <Image style={{width: 300, height: 100}} source={{uri: movie.image_url}} />
-              
-              <Text style={styles.title}>Title  |    {movie.title}</Text>
+              {/* <Text style={styles.title}>Title  |    {movie.title}</Text> 
 
-              <Text style={styles.release}>Release Year  |   {movie.release}</Text>
+               <Text style={styles.release}>Release Year  |   {movie.release}</Text>
 
               <Text style={styles.literature}>Screenplay written by  |   {movie.literature}</Text>
 
@@ -31,9 +46,9 @@ export default class MovieComponent extends Component {
 
               <Text style={styles.synopsis}>Screenplay written by  |   {movie.synopsis}</Text>
 
-              <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text>
+              <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text> */}
               
-              </View>
+              </ScrollView>
           );
         })}
       </View>
