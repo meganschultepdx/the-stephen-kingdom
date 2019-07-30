@@ -1,5 +1,5 @@
-import React, { Component, Image } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import PropTypes from 'prop-types';
 
 export default class MovieComponent extends Component {
@@ -8,14 +8,15 @@ export default class MovieComponent extends Component {
   };
 
   render() {
+    console.log(this.props.movies);
     return (
       <View style={StyleSheet.moviesList}>
         {this.props.movies.map((movie, index) => {
           return (
             <View key={index}>
               
-              <Image source={movie.image_url}></Image>
-
+              <Image style={{width: 300, height: 100}} source={{uri: movie.image_url}} />
+              
               <Text style={styles.title}>Title  |    {movie.title}</Text>
 
               <Text style={styles.release}>Release Year  |   {movie.release}</Text>
