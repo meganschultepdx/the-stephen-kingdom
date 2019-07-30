@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Image,
   Platform,
@@ -8,14 +8,28 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { db } from '../firebaseConfig'
+import MovieComponent from '../components/MovieComponent';
+import { db } from '../firebaseConfig';
+
+let moviesRef = db.ref('/movies');
 
 
 export default class MovieInfoScreen extends Component {
+  state = {
+    movies: []
+  };
+
+  componentDidMount() {
+    moviesRef.on('value', snapshot => {
+      let data = snapshot.val();
+      let movies = Object.values(data);
+      this.setState({ movies });
+    });
+  }
+
   render() {
     return (
       <ScrollView style={styles.container}>
-        <View>
           <Text style={styles.welcome}>
             welcome to the kingdom!
           </Text>
@@ -26,8 +40,11 @@ How about one that involved a lawsuit to get his name dissasociated with the pro
 Well, click on the movie posters below to find out more info on each! 
 `}
           </Text>
-          <Text>List</Text>
-        </View>
+                {this.state.movies.length > 0 ? (
+                  <MovieComponent movies={this.state.movies} />
+                ) : (
+                  <Text>No Movies</Text>
+                )}
       </ScrollView>
     );
   }

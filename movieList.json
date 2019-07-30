@@ -1,9 +1,8 @@
 {
   "movies": [
     {
-      "image_url": [
-        "https://m.media-amazon.com/images/M/MV5BMTlhNmVkZGUtNjdjOC00YWY3LTljZWQtMTY1YWFhNGYwNDQwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
-      ],
+      "image_url": 
+        "https://m.media-amazon.com/images/M/MV5BMTlhNmVkZGUtNjdjOC00YWY3LTljZWQtMTY1YWFhNGYwNDQwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
       "title": "Carrie",
       "release": "1976",
       "synopsis": "Carrie White, a shy, friendless teenage girl who is sheltered by her domineering, religious mother, unleashes her telekinetic powers after being humiliated by her classmates at her senior prom.",
@@ -14,9 +13,8 @@
       "funfact": "While speaking at a book event in Fort Myers, Florida in 2010, Stephen King recalled that he was paid just $2,500 for the movie rights to Carrie (1976), which may seem like a pittance, but he has no regrets, as he feels he was lucky to have that happen to his first book."
     },
     {
-      "image_url": [
-        "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
-      ],
+      "image_url": 
+        "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "title": "The Shining",
       "release": "1980",
       "synopsis": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
@@ -27,9 +25,8 @@
       "funfact": "Stephen King was quite disappointed in the final film. While admitting that Stanley Kubrick's visuals were stunning, he said that was surface and not substance. He often described the film as \"A fancy car without an engine."
     },
     {
-      "image_url": [
-        "https://m.media-amazon.com/images/M/MV5BOTU3NGIyZTctOWEyMS00MGIyLWFkZWMtMTg0ODE2MjExNGZlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,637,1000_AL_.jpg"
-      ],
+      "image_url": 
+        "https://m.media-amazon.com/images/M/MV5BOTU3NGIyZTctOWEyMS00MGIyLWFkZWMtMTg0ODE2MjExNGZlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,637,1000_AL_.jpg",
       "title": "Creepshow",
       "release": "1982",
       "synopsis": "An anthology which tells five terrifying tales based on the E.C. horror comic books of the 1950s.",
