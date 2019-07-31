@@ -1,14 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import FadeInView from './FadeInView'
 
 export default function SplashSubtitle() {
 
   return (
   
-  <View>
+  <FadeInView>
   <Text style={styles.splashSubtitle}> for all related</Text>
   <Text style={styles.splashSubtitle2}>movies & mini-series </Text>
-  </View>
+  </FadeInView>
   );
 }
 

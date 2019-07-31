@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import MovieComponent from '../components/MovieComponent';
 import { db } from '../firebaseConfig';
+import FadeInView from '../components/FadeInView';
 
 let moviesRef = db.ref('/movies');
 
@@ -30,16 +31,18 @@ export default class MovieInfoScreen extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
+        <FadeInView>
         <Text style={styles.welcome}>
           welcome to the kingdom!
           </Text>
-        <Text style={styles.info}>
+        </FadeInView>
+          <Text style={styles.info}>
           {`
-Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature?
-How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? 
-Well, click on the movie posters below to find out more info on each! 
-`}
-        </Text>
+Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature? `}</Text>
+<Text style={styles.info2}>{`
+How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? `}</Text>
+<Text style={styles.info3}>{`
+Well, click on the movie posters below to find out more info on each! `}</Text>      
         <MovieComponent movies={this.state.movies} />
 
       </ScrollView>
@@ -49,13 +52,13 @@ Well, click on the movie posters below to find out more info on each!
 
 
 const styles = StyleSheet.create({
-  container: {  
+  container: {
     flex: 1,
     paddingTop: 15,
     backgroundColor: '#000',
   },
   welcome: {
-    color: 'white',
+    color: 'red',
     textAlign: 'center',
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
@@ -66,5 +69,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginRight: 30,
     marginLeft: 30,
+  },
+  info3: {
+    color: 'grey',
+    textAlign: 'center',
+    marginRight: 30,
+    marginLeft: 30,
+    paddingBottom: 20,
   }
 });

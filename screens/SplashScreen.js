@@ -8,7 +8,8 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Dimensions
+  Dimensions,
+  Animated
 } from 'react-native';
 import SplashTitle from '../components/SplashTitle'
 import SplashSubtitle from '../components/SplashSubtitle'
@@ -19,7 +20,8 @@ const imageHeight = Math.round(dimensions.width * 9 / 16);
 const imageWidth = dimensions.width;
 
 
-export default function SplashScreen() {
+export default class SplashScreen extends React.Component {
+  render() {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -42,6 +44,7 @@ export default function SplashScreen() {
 
     </View>
   );
+}
 }
 
 SplashScreen.navigationOptions = {
