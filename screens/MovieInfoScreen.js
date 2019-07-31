@@ -36,16 +36,18 @@ export default class MovieInfoScreen extends Component {
             welcome to the kingdom!
           </Text>
         </FadeInView>
-        <Text style={styles.info}>
-          {`
+        <View style={styles.borderRadius}>
+          <Text style={styles.info}>
+            {`
 Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature? `}</Text>
-        <Text style={styles.info2}>{`
+          <Text style={styles.info2}>{`
 How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? `}</Text>
-        <Text style={styles.info3}>{`
-Well, click on the movie posters below to find out more info on each! `}</Text>
+          <Text style={styles.info3}>{`
+Click on the movie posters below to find out more info on each! `}</Text>
+        </View>
         <MovieComponent movies={this.state.movies} />
 
-      </ScrollView>
+      </ScrollView >
     );
   }
 }
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#212424',
     margin: 10,
     marginRight: 30,
-    borderRadius: 10,
+    borderRadius: 4,
     fontFamily: 'texgyreadventor-bold',
     // textTransform: "uppercase",
     borderBottomLeftRadius: 10,
@@ -97,6 +99,7 @@ const styles = StyleSheet.create({
     marginLeft: 30,
     marginRight: 10,
     fontFamily: 'texgyreadventor-bold',
+    borderRadius: 4,
     // textTransform: "uppercase",
 
   },
@@ -110,9 +113,14 @@ const styles = StyleSheet.create({
     borderColor: '#212424',
     backgroundColor: '#212424',
     margin: 10,
-    borderRadius: 100,
+    marginBottom: 20,
+    borderRadius: 4,
     marginRight: 30,
     fontFamily: 'texgyreadventor-bold',
     // textTransform: "uppercase",
+  },
+  borderRadius: {
+    borderRadius: 4,
   }
+
 });
