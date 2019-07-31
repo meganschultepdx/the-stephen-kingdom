@@ -13,7 +13,11 @@ export default class MovieComponent extends Component {
   }
 
   setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
+    this.setState({ modalVisible: true });
+  }
+
+  handleCloseModal(visible) {
+    this.setState({ modalVisible: false });
   }
 
   render() {
@@ -24,7 +28,7 @@ export default class MovieComponent extends Component {
             <ScrollView key={index}>
               <View style={styles.container}>
                 <Image onPress={() => { this.setModalVisible(true); }}
-                 style={{ width: 130, height: 190 }} source={{ uri: movie.image_url }} />
+                  style={{ width: 130, height: 190 }} source={{ uri: movie.image_url }} />
               </View>
               <Modal
                 animationType="slide"
@@ -47,79 +51,80 @@ export default class MovieComponent extends Component {
 
                 <Text style={styles.synopsis}>Screenplay written by  |   {movie.synopsis}</Text>
 
-                <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text> 
+                <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text>
 
                 <TouchableHighlight onPress={() => {
-                  this.setModalVisible(!this.state.modalVisible);}} style={styles.closeModal}>Close Modal</TouchableHighlight>
+                  this.setModalVisible(!this.state.modalVisible);
+                }} style={styles.closeModal}>Close Modal</TouchableHighlight>
               </Modal>
-                
-              </ScrollView>
-              );
-            })}
-      </View>
+
+            </ScrollView>
           );
-        }
+        })}
+      </View>
+    );
+  }
 }
 
-        const styles = StyleSheet.create({
-          moviesList: {
-          flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'space-around',
-        color: 'white'
-      },
+const styles = StyleSheet.create({
+  moviesList: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    color: 'white'
+  },
   title: {
-          fontSize: 14,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 14,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   release: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   release: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   format: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   directed: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   screenplay: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   literature: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   synopsis: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
   funfact: {
-          fontSize: 12,
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase'
-      },
+    fontSize: 12,
+    textAlign: 'center',
+    color: 'white',
+    textTransform: 'uppercase'
+  },
 });
