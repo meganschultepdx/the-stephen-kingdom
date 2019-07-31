@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, Modal, TouchableHighlight } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, Modal, TouchableHighlight, Button } from 'react-native';
 import PropTypes from 'prop-types';
 import { whileStatement } from '@babel/types';
 
@@ -15,7 +15,6 @@ export default class MovieComponent extends Component {
   }
 
   setModalVisible(visible) {
-    console.log('this worked');
     this.setState({ modalVisible: visible });
   }
 
@@ -27,47 +26,47 @@ export default class MovieComponent extends Component {
         {this.props.movies.map((movie, index) => {
           return (
             <ScrollView key={index}>
-              <View style={styles.container}>
-                <Image
-                  style={{ width: 130, height: 190 }} source={{ uri: movie.image_url }} />
-              </View>
-
-              <View>
+              
                 <TouchableHighlight
                   onPress={() => {
                     this.setModalVisible(true);
                   }}>
-                  <Text style={styles.button}>Show Modal</Text>
+                  <Image 
+                    style={{ width: 130, height: 190 }} source={{ uri: this.props.movies[index].image_url }} />
                 </TouchableHighlight>
-              </View>
 
               <Modal
-                animationType="slide"
+                style={styles.modal}
                 transparent={false}
-                visible={this.state.modalVisible}
+                backdropColor = {'black'}
+                bakcdropOpacity = {4}
+                marginTop={50}
+                animationType="slide"
+                  visible={this.state.modalVisible}
                 onRequestClose={() => {
-                  alert.alert('modal has been closed');
+                  this.setModalVisible(false);
                 }} >
-                <Text style={styles.title}>Title  |    {movie.title}</Text>
+                <Text style={styles.title}>Title  |    {this.props.movies[index].title}</Text>
 
-                <Text style={styles.release}>Release Year  |   {movie.release}</Text>
+                <Text style={styles.release}>Release Year  |   {this.props.movies[index].release}</Text>
 
-                <Text style={styles.literature}>Screenplay written by  |   {movie.literature}</Text>
+                <Text style={styles.literature}>Screenplay written by  |   {this.props.movies[index].literature}</Text>
 
-                <Text style={styles.format}>Movie or TV Mini-series  |   {movie.format}</Text>
+                <Text style={styles.format}>Movie or TV Mini-series  |   {this.props.movies[index].format}</Text>
 
-                <Text style={styles.directed}>Directe By  |   {movie.directedBy}</Text>
+                <Text style={styles.directed}>Directed By  |   {this.props.movies[index].directedBy}</Text>
 
-                <Text style={styles.screenplay}>Screenplay written by  |   {movie.screenplay}</Text>
+                <Text style={styles.screenplay}>Screenplay written by  |   {this.props.movies[index].screenplay}</Text>
 
-                <Text style={styles.synopsis}>Screenplay written by  |   {movie.synopsis}</Text>
+                <Text style={styles.synopsis}>Synopsis  |   {this.props.movies[index].synopsis}</Text>
 
-                <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text>
-                {/* <Text>
-                  <TouchableHighlight onPress={() => {
-                    this.setModalVisible(false)
-                  }} style={styles.closeModal}>Close Modal</TouchableHighlight>
-                </Text> */}
+                <Text style={styles.funfact}>Fun Filming Fact  |   {this.props.movies[index].funfact}</Text>
+
+                <Button onPress={() => {
+                  console.log("press");
+                  this.setModalVisible(!this.state.modalVisible);
+                }} title="close" style={styles.closeModal}/>
+
               </Modal>
 
 
@@ -81,8 +80,8 @@ export default class MovieComponent extends Component {
 
 const styles = StyleSheet.create({
 
-  button: {
-    color: 'white',
+  modal: {
+    marginTop: 100,
   },
   moviesList: {
     flex: 1,
