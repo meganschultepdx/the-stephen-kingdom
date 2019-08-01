@@ -10,22 +10,29 @@ export default function movieInfoAboutBlurbs(props) {
 
   return (
 
-    
-    <View style={styles.borderRadius}>
-      <Text style={styles.info}>
-        {`
+    <View>
+      <Image
+        source={
+          require('../assets/images/greengoblin.jpg')
+        }
+        style={styles.greenGoblinImage} />
+      <View style={styles.infoBlurbs}>
+        <Text style={styles.info}>
+          {`
 Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature? `}</Text>
-      <Text style={styles.info2}>{`
+        <Text style={styles.info2}>{`
 How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? `}</Text>
-      <Text style={styles.info3}>{`
+        <Text style={styles.info3}>{`
 Click on the movie posters below to find out more info on each! `}</Text>
+      </View>
     </View>
+
   );
 }
 
 const styles = StyleSheet.create({
   info: {
-    color: 'lightgrey',
+    color: 'white',
     textAlign: 'left',
     borderWidth: 1,
     paddingBottom: 10,
@@ -37,14 +44,14 @@ const styles = StyleSheet.create({
     marginRight: 30,
     borderRadius: 4,
     fontFamily: 'texgyreadventor-bold',
-    // textTransform: "uppercase",
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
     borderTopRightRadius: 10,
     borderTopLeftRadius: 10,
+    opacity: .7,
   },
   info2: {
-    color: '#212424',
+    color: 'black',
     textAlign: 'right',
     borderWidth: 1,
     paddingBottom: 10,
@@ -52,16 +59,16 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
     borderColor: 'lightgrey',
     backgroundColor: 'lightgrey',
-    opacity: .9,
+    opacity: .7,
     marginLeft: 30,
     marginRight: 10,
     fontFamily: 'texgyreadventor-bold',
     borderRadius: 4,
-    // textTransform: "uppercase",
+    
 
   },
   info3: {
-    color: 'lightgrey',
+    color: 'white',
     textAlign: 'left',
     borderWidth: 1,
     paddingBottom: 10,
@@ -74,9 +81,13 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     marginRight: 30,
     fontFamily: 'texgyreadventor-bold',
-    // textTransform: "uppercase",
+    opacity: .7,
   },
   borderRadius: {
     borderRadius: 4,
+  },
+
+  infoBlurbs: {
+    position: 'absolute',
   }
 });
