@@ -1,8 +1,7 @@
 {
   "movies": [
     {
-      "image_url": 
-        "https://m.media-amazon.com/images/M/MV5BMTlhNmVkZGUtNjdjOC00YWY3LTljZWQtMTY1YWFhNGYwNDQwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+      "image_url": "https://m.media-amazon.com/images/M/MV5BMTlhNmVkZGUtNjdjOC00YWY3LTljZWQtMTY1YWFhNGYwNDQwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
       "title": "Carrie",
       "release": "1976",
       "synopsis": "Carrie White, a shy, friendless teenage girl who is sheltered by her domineering, religious mother, unleashes her telekinetic powers after being humiliated by her classmates at her senior prom.",
@@ -13,8 +12,7 @@
       "funfact": "While speaking at a book event in Fort Myers, Florida in 2010, Stephen King recalled that he was paid just $2,500 for the movie rights to Carrie (1976), which may seem like a pittance, but he has no regrets, as he feels he was lucky to have that happen to his first book."
     },
     {
-      "image_url": 
-        "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "image_url": "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "title": "The Shining",
       "release": "1980",
       "synopsis": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
@@ -25,8 +23,7 @@
       "funfact": "Stephen King was quite disappointed in the final film. While admitting that Stanley Kubrick's visuals were stunning, he said that was surface and not substance. He often described the film as \"A fancy car without an engine."
     },
     {
-      "image_url": 
-        "https://m.media-amazon.com/images/M/MV5BOTU3NGIyZTctOWEyMS00MGIyLWFkZWMtMTg0ODE2MjExNGZlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,637,1000_AL_.jpg",
+      "image_url": "https://m.media-amazon.com/images/M/MV5BOTU3NGIyZTctOWEyMS00MGIyLWFkZWMtMTg0ODE2MjExNGZlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,637,1000_AL_.jpg",
       "title": "Creepshow",
       "release": "1982",
       "synopsis": "An anthology which tells five terrifying tales based on the E.C. horror comic books of the 1950s.",
@@ -37,8 +34,7 @@
       "funfact": "Stephen King carried a toy figure of the character Greedo from Star Wars: Episode IV - A New Hope (1977) on the Creepshow set for good luck."
     },
     {
-    "image_url": 
-        "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/CujoVHScover.jpg/220px-CujoVHScover.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/CujoVHScover.jpg/220px-CujoVHScover.jpg",
       "title": "Cujo",
       "release": "1983",
       "synopsis": "Cujo, a friendly St. Bernard, contracts rabies and conducts a reign of terror on a small American town.",
@@ -49,53 +45,92 @@
       "funfact": ""
     },
     {
-      "image_url": 
-          "https://outline-prod.imgix.net/20180302-tgJU0l5BOHwO0pAzpmWv?auto=format&q=60&w=1280&s=89323f04062516839388bc36a83a4486",
-        "title": "The Dead Zone",
-        "release": "1983",
-        "synopsis": "A man awakens from a coma to discover he has a psychic ability.",
-        "literature": "based on the King novel of the same name",
-        "format": "movie",
-        "directedBy": "David Cronnberg",
-        "screenplay": "Jeffrey Boam",
-        "funfact": ""
-      },
-      {
-        "image_url": 
-            "https://outline-prod.imgix.net/20180302-tgJU0l5BOHwO0pAzpmWv?auto=format&q=60&w=1280&s=89323f04062516839388bc36a83a4486",
-          "title": "Christine",
-          "release": "1983",
-          "synopsis": "A nerdish boy buys a strange car with an evil mind of its own and his nature starts to change to reflect it.",
-          "literature": "based on the King novel of the same name",
-          "format": "movie",
-          "directedBy": "John Carpenter",
-          "screenplay": "Bill Phillips",
-          "funfact": ""
-        },
-        {
-          "image_url": 
-              "https://outline-prod.imgix.net/20180302-tgJU0l5BOHwO0pAzpmWv?auto=format&q=60&w=1280&s=89323f04062516839388bc36a83a4486",
-            "title": "Children of the Corn",
-            "release": "1984",
-            "synopsis": "A young couple is trapped in a remote town where a dangerous religious cult of children believe everyone over the age of 18 must be killed.",
-            "literature": "based on the King novel of the same name",
-            "format": "movie",
-            "directedBy": "Fritz Kiersch",
-            "screenplay": "George Goldsmith",
-            "funfact": ""
-          },
-          {
-            "image_url": 
-                "https://outline-prod.imgix.net/20180302-tgJU0l5BOHwO0pAzpmWv?auto=format&q=60&w=1280&s=89323f04062516839388bc36a83a4486",
-              "title": "Children of the Corn",
-              "release": "1984",
-              "synopsis": "A couple who participated in a potent medical experiment gain telekinetic ability and then have a child who is pyrokinetic.",
-              "literature": "based on the King novel of the same name",
-              "format": "movie",
-              "directedBy": "Mark L Lester",
-              "screenplay": "Stanley Mann",
-              "funfact": ""
-            }
-      
-]
+      "image_url": "https://outline-prod.imgix.net/20180302-tgJU0l5BOHwO0pAzpmWv?auto=format&q=60&w=1280&s=89323f04062516839388bc36a83a4486",
+      "title": "The Dead Zone",
+      "release": "1983",
+      "synopsis": "A man awakens from a coma to discover he has a psychic ability.",
+      "literature": "based on the King novel of the same name",
+      "format": "movie",
+      "directedBy": "David Cronnberg",
+      "screenplay": "Jeffrey Boam",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BZThhNDQxNzAtOTYzZC00MzZkLWI2YjItOTE2ZjliZDY3NTFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "title": "Christine",
+      "release": "1983",
+      "synopsis": "A nerdish boy buys a strange car with an evil mind of its own and his nature starts to change to reflect it.",
+      "literature": "based on the King novel of the same name",
+      "format": "movie",
+      "directedBy": "John Carpenter",
+      "screenplay": "Bill Phillips",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BMDg3OTc2OTQtZDA0My00YTJiLTg3ZTYtOGYwZWM1NWVhZDdiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+      "title": "Children of the Corn",
+      "release": "1984",
+      "synopsis": "A young couple is trapped in a remote town where a dangerous religious cult of children believe everyone over the age of 18 must be killed.",
+      "literature": "based on the King novel of the same name",
+      "format": "movie",
+      "directedBy": "Fritz Kiersch",
+      "screenplay": "George Goldsmith",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BNzFiZTQ4ZjQtNjgyZi00Yjc0LWI2Y2YtNjk0YzM3NWEwYjYzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,642,1000_AL_.jpg",
+      "title": "Firestarter",
+      "release": "1984",
+      "synopsis": "A couple who participated in a potent medical experiment gain telekinetic ability and then have a child who is pyrokinetic.",
+      "literature": "based on the King novel of the same name",
+      "format": "movie",
+      "directedBy": "Mark L Lester",
+      "screenplay": "Stanley Mann",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BOTA0MDliYzMtYTNhMS00MjkyLWExMGItYzY5MjFhOTNmZjRhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,652,1000_AL_.jpg",
+      "title": "Cat's Eye",
+      "release": "1985",
+      "synopsis": "A stray cat is the linking element of three tales of suspense and horror.",
+      "literature": "based on the short stories Quitters, Inc. and The Ledge, the rest is original work for the film",
+      "format": "movie",
+      "directedBy": "Lewis Teague",
+      "screenplay": "Stephen King",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BYjYyZTM5MjEtNzhhYS00MTZlLTk5NzYtMTk4OTJhY2EzN2VkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+      "title": "Silver Bullet",
+      "release": "1985",
+      "synopsis": "A werewolf terrorizes a small city where lives the paralytic Marty Coslaw, his uncle, and his sister, the story's narrator.",
+      "literature": "Based on the short novel Cycle of the Werwolf",
+      "format": "movie",
+      "directedBy": "Dan Attias",
+      "screenplay": "Stephen King",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BYzUwOWQxNjAtMzU4MC00M2IwLWEyNzgtNGRlMjE4Y2VlYThiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY999_CR0,0,655,999_AL_.jpg",
+      "title": "Maximum Overdrive",
+      "release": "1986",
+      "synopsis": "A group of people try to survive when machines start to come alive and become homicidal.",
+      "literature": "based on the short story Trucks",
+      "format": "movie",
+      "directedBy": "Stephen King",
+      "screenplay": "Stephen King",
+      "funfact": ""
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BODJmY2Y2OGQtMDg2My00N2Q3LWJmZTUtYTc2ODBjZDVlNDlhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,634,1000_AL_.jpg",
+      "title": "Stand By Me",
+      "release": "1986",
+      "synopsis": "AAfter the death of one of his friends, a writer recounts a boyhood journey with his friends to find the body of a missing boy.",
+      "literature": "based on the novella The Body",
+      "format": "movie",
+      "directedBy": "Rob Reiner",
+      "screenplay": "Raynold Gideon",
+      "funfact": ""
+    }
+  ]
 }

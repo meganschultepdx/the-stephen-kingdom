@@ -42,12 +42,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#212424',
     margin: 10,
     marginRight: 30,
-    borderRadius: 4,
+    borderRadius: 2,
     fontFamily: 'texgyreadventor-bold',
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
-    borderTopRightRadius: 10,
-    borderTopLeftRadius: 10,
     opacity: .7,
   },
   info2: {
@@ -63,7 +59,7 @@ const styles = StyleSheet.create({
     marginLeft: 30,
     marginRight: 10,
     fontFamily: 'texgyreadventor-bold',
-    borderRadius: 4,
+    borderRadius: 2,
     
 
   },
@@ -78,14 +74,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#212424',
     margin: 10,
     marginBottom: 20,
-    borderRadius: 4,
+    borderRadius: 2,
     marginRight: 30,
     fontFamily: 'texgyreadventor-bold',
     opacity: .7,
   },
-  borderRadius: {
-    borderRadius: 4,
-  },
+  
 
   infoBlurbs: {
     position: 'absolute',
