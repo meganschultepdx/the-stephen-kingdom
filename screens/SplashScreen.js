@@ -38,8 +38,6 @@ export default class SplashScreen extends React.Component {
         <SplashTitle />
         <SplashSubtitle />
         </View>
-        
-      
       </ScrollView>
 
     </View>
@@ -50,8 +48,6 @@ export default class SplashScreen extends React.Component {
 SplashScreen.navigationOptions = {
   header: null,
 };
-
-
 
 const styles = StyleSheet.create({
   container: {

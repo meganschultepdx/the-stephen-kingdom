@@ -38,6 +38,9 @@ export default function AboutScreen() {
   );
 }
 
+AboutScreen.navigationOptions = {
+  header: null,
+};
 
 
 const styles = StyleSheet.create({

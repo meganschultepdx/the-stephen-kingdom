@@ -20,7 +20,7 @@ export default class MovieComponent extends Component {
       }
   }
 
-  ShowHideMovieData = (index) =>{
+  ShowHideMovieData = () =>{
       if(this.state.status === true)
       {
           this.setState({status: false})
@@ -36,15 +36,16 @@ export default class MovieComponent extends Component {
 
     return (
 
-      <View style={styles.moviesList}>
+      <View style={styles.moviesList} >
         {this.props.movies.map((movie, index) => {
+            console.log(index);
           return (
             <ScrollView key={index}>
               
-                <TouchableHighlight
+                <TouchableHighlight 
                   onPress={this.ShowHideMovieData}>
                   <Image 
-                    style={{ width: 130, height: 190 }} source={{ uri: this.props.movies[index].image_url }} />
+                    style={{ width: 130, height: 190, marginBottom: -25 }} source={{ uri: this.props.movies[index].image_url }} />
                 </TouchableHighlight>
 
                 <View style={styles.MovieDataContainer}>
@@ -89,10 +90,10 @@ MovieDataContainer: {
   moviesList: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     flexWrap: 'wrap',
     marginLeft: 40,
-    
+    marginTop: 15,
   },
   title: {
     fontSize: 14,
