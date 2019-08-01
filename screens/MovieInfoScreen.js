@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import MovieComponent from '../components/MovieComponent';
-import { db } from '../firebaseConfig';
+import { db } from '../constants/FirebaseConfig';
 import FadeInView from '../components/FadeInView';
 import MovieInfoAboutBlurbs from '../components/MovieInfoAboutBlurbs';
 

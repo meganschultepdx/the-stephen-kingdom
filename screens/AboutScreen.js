@@ -49,47 +49,51 @@ he is associated with it (sprinkled with a
 few fun filming facts along the way). 
 `}</Text>
           <Text style={styles.enjoy}>
-          Enjoy!</Text>
+            Enjoy!</Text>
           <FadeInView>
             <Text style={styles.about}>about Stephen King</Text>
           </FadeInView>
           <Text style={styles.why}>{`
-          - He was hit by a car, then bought the 
-          car that hit him
+  - He was hit by a car, then bought the 
+  car that hit him
 
-          - He played in a band from 1992 to 
-          2012 with Amy Tan, Dave Barry, Mitch 
-          Albom, Barbara Kingsolver, Matt Groening
-          and Ridley Pearson, each members 
-          at some point. 
+  - He played in a band from 1992 to 
+  2012 with Amy Tan, Dave Barry, Mitch 
+  Albom, Barbara Kingsolver, Matt Groening
+  and Ridley Pearson, each members 
+  at some point. 
 
-          - He got his start publishing his short
-          stories in porn magazines
+  - He got his start publishing his short
+  stories in porn magazines
 
-          - He wrote a musical with 
-          John Mellancamp
-          
-          - He's done a bit of coke over the years
-          hahaha, duh
+  - He wrote a musical with 
+  John Mellancamp
+  
+  - He's done a bit of coke over the years
+  hahaha, duh
 
-          - He barely remembers writing Cujo (see
-           previous fact)
+  - He barely remembers writing Cujo (see
+    previous fact)
 
-          - He's published books under the alias 
-          Richard Bachman
+  - He's published books under the alias 
+  Richard Bachman
 
-          - as a kid, his friend was struck and 
-          killed by a train
+  - as a kid, his friend was struck and 
+  killed by a train
 
-          - He originally threw the beginning pages 
-          of Carrie away thinking it was trash, 
-          luckily his wife pulled it out and 
-          convinced him to keep going with it
+  - He originally threw the beginning pages 
+  of Carrie away thinking it was trash, 
+  luckily his wife pulled it out and 
+  convinced him to keep going with it
 
-          - King suffers from triskaidekaphobia
+  - King suffers from triskaidekaphobia
           `}</Text>
         </View>
-
+        <Image
+          source={
+            require('../assets/images/stephenKingblackwhite.png')
+          }
+          style={styles.bottomImage} />
 
       </ScrollView>
 
@@ -128,14 +132,35 @@ const styles = StyleSheet.create({
   why: {
     color: 'lightgrey',
     fontSize: 15,
-    marginTop: -20,
+    marginTop: -5,
+    borderWidth: 1,
+    borderColor: '#212424',
+    backgroundColor: '#212424',
+    paddingLeft: 10,
+    paddingRight: 10,
+    opacity: .7,
+
   },
   enjoy: {
-      color: 'lightgrey',
-      fontSize: 15,
-      marginTop: -20,
-      textAlign: 'center',
-    }
-  
+    color: 'lightgrey',
+    fontSize: 15,
+    
+    textAlign: 'center',
+    paddingTop: 10,
+    borderWidth: 1,
+    borderColor: '#212424',
+    backgroundColor: '#212424',
+    paddingLeft: 136,
+    paddingRight: 136,
+    paddingBottom: 10,
+    opacity: .7,
+  },
+  bottomImage: {
+    width: imageWidth,
+    marginTop: 50,
+    borderRadius: 4,
+    marginTop: -25,
+  },
+
 
 });
