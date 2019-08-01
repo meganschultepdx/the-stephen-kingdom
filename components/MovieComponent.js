@@ -51,21 +51,21 @@ export default class MovieComponent extends Component {
                 <View style={styles.MovieDataContainer}>
                 { this.state.status ? 
                 <View>
-                <Text style={styles.title}>Title  |    {this.props.movies[index].title}</Text>
+                <Text style={styles.description}>Title  |    <Text style={styles.data}>{this.props.movies[index].title}</Text></Text>
 
-                <Text style={styles.release}>Release Year  |   {this.props.movies[index].release}</Text>
+                <Text style={styles.description}>Release Year  |   <Text style={styles.data}>{this.props.movies[index].release}</Text></Text>
 
-                <Text style={styles.literature}>Screenplay written by  |   {this.props.movies[index].literature}</Text>
+                <Text style={styles.description}> Based on  |   <Text style={styles.data}>{this.props.movies[index].literature}</Text></Text>
 
-                <Text style={styles.format}>Movie or TV Mini-series  |   {this.props.movies[index].format}</Text>
+                <Text style={styles.description}>Movie or TV Mini-series  |   <Text style={styles.data}>{this.props.movies[index].format}</Text></Text>
 
-                <Text style={styles.directed}>Directed By  |   {this.props.movies[index].directedBy}</Text>
+                <Text style={styles.description}>Directed By  |   <Text style={styles.data}>{this.props.movies[index].directedBy}</Text></Text>
 
-                <Text style={styles.screenplay}>Screenplay written by  |   {this.props.movies[index].screenplay}</Text>
+                <Text style={styles.description}>Screenplay written by  |   <Text style={styles.data}>{this.props.movies[index].screenplay}</Text></Text>
 
-                <Text style={styles.synopsis}>Synopsis  |   {this.props.movies[index].synopsis}</Text>
+                <Text style={styles.description}>Synopsis  |   <Text style={styles.data}>{this.props.movies[index].synopsis}</Text></Text>
 
-                <Text style={styles.funfact}>Fun Filming Fact  |   {this.props.movies[index].funfact}</Text>
+                <Text style={styles.description}>Fun Filming Fact  |   <Text style={styles.data}>{this.props.movies[index].funfact}</Text></Text>
                 </View>
                 : null }
                 
@@ -93,60 +93,21 @@ MovieDataContainer: {
     justifyContent: 'space-around',
     flexWrap: 'wrap',
     marginLeft: 40,
-    marginTop: 15,
+    marginTop: 25,
   },
-  title: {
+  description: {
+    fontSize: 16,
+    textAlign: 'left',
+    marginLeft: -30,
+    marginTop: 10,
+    color: '#bf312d',
+    textTransform: 'uppercase'
+  },
+  data: {
     fontSize: 14,
     textAlign: 'center',
     color: 'white',
-    textTransform: 'uppercase'
+    textTransform: 'capitalize'
   },
-  release: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  release: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  format: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  directed: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  screenplay: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  literature: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  synopsis: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  funfact: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
+
 });
