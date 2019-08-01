@@ -1,14 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import FadeInView from './FadeInView'
 
 export default function SplashSubtitle() {
 
   return (
   
-  <View>
+  <FadeInView>
   <Text style={styles.splashSubtitle}> for all related</Text>
   <Text style={styles.splashSubtitle2}>movies & mini-series </Text>
-  </View>
+  </FadeInView>
   );
 }
 
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     textTransform: 'uppercase',
-    paddingTop: 25,
+    paddingTop: 35,
     fontFamily: 'texgyreadventor-bold',
     color: 'grey'
   },

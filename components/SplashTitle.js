@@ -1,16 +1,19 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Animated } from 'react-native';
+import FadeInView from './FadeInView'
 
-export default function SplashTitle() {
+export default class SplashTitle extends React.Component {
+  render() {
 
-  return (
-  
-  <View>
-  <Text style={styles.titleThe}>the</Text>
-  <Text style={styles.titleStephen}>stephen</Text>
-  <Text style={styles.titleKingdom}>kingdom</Text>
-  </View>
-  );
+    return (
+
+      <FadeInView>
+        <Text style={styles.titleThe}>the</Text>
+        <Text style={styles.titleStephen}>stephen</Text>
+        <Text style={styles.titleKingdom}>kingdom</Text>
+      </FadeInView>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
-    marginTop: -17,
+    marginTop: -18,
   },
   titleKingdom: {
     color: 'white',
@@ -35,7 +38,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
-    marginTop: -17,
+    marginTop: -18,
   }
 
 

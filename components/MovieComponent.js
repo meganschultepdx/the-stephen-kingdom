@@ -1,39 +1,77 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, TouchableHighlight, Button, LayoutAnimation, NativeModules } from 'react-native';
 import PropTypes from 'prop-types';
+import { whileStatement } from '@babel/types';
+
+const { UIManager } = NativeModules;
+
+UIManager.setLayoutAnimationEnabledExperimental &&
+  UIManager.setLayoutAnimationEnabledExperimental(true);
 
 export default class MovieComponent extends Component {
   static propTypes = {
     movies: PropTypes.array.isRequired
   };
 
+  constructor(){
+      super();
+      this.state = {
+          status: false
+      }
+  }
+
+  ShowHideMovieData = () =>{
+      if(this.state.status === true)
+      {
+          this.setState({status: false})
+      }
+      else
+      {
+          this.setState({status: true})
+      }
+  }
+
+
   render() {
-    console.log(this.props.movies);
+
     return (
-      <View style={StyleSheet.moviesList}>
+
+      <View style={styles.moviesList} >
         {this.props.movies.map((movie, index) => {
+            console.log(index);
           return (
-            <View key={index}>
+            <ScrollView key={index}>
               
-              <Image style={{width: 300, height: 100}} source={{uri: movie.image_url}} />
-              
-              <Text style={styles.title}>Title  |    {movie.title}</Text>
+                <TouchableHighlight 
+                  onPress={this.ShowHideMovieData}>
+                  <Image 
+                    style={{ width: 130, height: 190, marginBottom: -25 }} source={{ uri: this.props.movies[index].image_url }} />
+                </TouchableHighlight>
 
-              <Text style={styles.release}>Release Year  |   {movie.release}</Text>
+                <View style={styles.MovieDataContainer}>
+                { this.state.status ? 
+                <View>
+                <Text style={styles.description}>Title  |    <Text style={styles.data}>{this.props.movies[index].title}</Text></Text>
 
-              <Text style={styles.literature}>Screenplay written by  |   {movie.literature}</Text>
+                <Text style={styles.description}>Release Year  |   <Text style={styles.data}>{this.props.movies[index].release}</Text></Text>
 
-              <Text style={styles.format}>Movie or TV Mini-series  |   {movie.format}</Text>
+                <Text style={styles.description}> Based on  |   <Text style={styles.data}>{this.props.movies[index].literature}</Text></Text>
 
-              <Text style={styles.directed}>Directe By  |   {movie.directedBy}</Text>
+                <Text style={styles.description}>Movie or TV Mini-series  |   <Text style={styles.data}>{this.props.movies[index].format}</Text></Text>
 
-              <Text style={styles.screenplay}>Screenplay written by  |   {movie.screenplay}</Text>
+                <Text style={styles.description}>Directed By  |   <Text style={styles.data}>{this.props.movies[index].directedBy}</Text></Text>
 
-              <Text style={styles.synopsis}>Screenplay written by  |   {movie.synopsis}</Text>
+                <Text style={styles.description}>Screenplay written by  |   <Text style={styles.data}>{this.props.movies[index].screenplay}</Text></Text>
 
-              <Text style={styles.funfact}>Screenplay written by  |   {movie.funfact}</Text>
-              
-              </View>
+                <Text style={styles.description}>Synopsis  |   <Text style={styles.data}>{this.props.movies[index].synopsis}</Text></Text>
+
+                <Text style={styles.description}>Fun Filming Fact  |   <Text style={styles.data}>{this.props.movies[index].funfact}</Text></Text>
+                </View>
+                : null }
+                
+                </View>
+                
+            </ScrollView>
           );
         })}
       </View>
@@ -42,64 +80,34 @@ export default class MovieComponent extends Component {
 }
 
 const styles = StyleSheet.create({
+
+MovieDataContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    margin: 30,
+},
+
   moviesList: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: 'row',
     justifyContent: 'space-around',
-    color: 'white'
+    flexWrap: 'wrap',
+    marginLeft: 40,
+    marginTop: 25,
   },
-  title: {
+  description: {
+    fontSize: 16,
+    textAlign: 'left',
+    marginLeft: -30,
+    marginTop: 10,
+    color: '#bf312d',
+    textTransform: 'uppercase'
+  },
+  data: {
     fontSize: 14,
     textAlign: 'center',
     color: 'white',
-    textTransform: 'uppercase'
+    textTransform: 'capitalize'
   },
-  release: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  release: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  format: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  directed: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  screenplay: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  literature: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  synopsis: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
-  funfact: {
-    fontSize: 12,
-    textAlign: 'center',
-    color: 'white',
-    textTransform: 'uppercase'
-  },
+
 });

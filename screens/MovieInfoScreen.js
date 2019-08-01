@@ -10,6 +10,8 @@ import {
 } from 'react-native';
 import MovieComponent from '../components/MovieComponent';
 import { db } from '../firebaseConfig';
+import FadeInView from '../components/FadeInView';
+import MovieInfoAboutBlurbs from '../components/MovieInfoAboutBlurbs';
 
 let moviesRef = db.ref('/movies');
 
@@ -30,44 +32,38 @@ export default class MovieInfoScreen extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
+        <FadeInView>
           <Text style={styles.welcome}>
             welcome to the kingdom!
           </Text>
-          <Text style={styles.info}>
-            {`
-Ever wonder which Stephen King movies were actually written or directed by him or just based off his literature?
-How about one that involved a lawsuit to get his name dissasociated with the project because it relates to a work of his in title only? 
-Well, click on the movie posters below to find out more info on each! 
-`}
-          </Text>
-                {this.state.movies.length > 0 ? (
-                  <MovieComponent movies={this.state.movies} />
-                ) : (
-                  <Text>No Movies</Text>
-                )}
-      </ScrollView>
+        </FadeInView>
+        <MovieInfoAboutBlurbs />
+        <MovieComponent movies={this.state.movies} />
+
+      </ScrollView >
     );
   }
 }
+
+MovieInfoScreen.navigationOptions = {
+  header: null,
+};
 
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 15,
+    paddingTop:50,
     backgroundColor: '#000',
   },
   welcome: {
-    color: 'white',
+    color: '#bf312d',
     textAlign: 'center',
     textTransform: 'uppercase',
     fontFamily: 'eighties-horror',
-    fontSize: 22,
+    fontSize: 24,
+    paddingBottom: 10,
   },
-  info: {
-    color: 'grey',
-    textAlign: 'center',
-    marginRight: 30,
-    marginLeft: 30,
-  }
+  
+
 });
