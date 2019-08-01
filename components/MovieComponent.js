@@ -20,7 +20,7 @@ export default class MovieComponent extends Component {
       }
   }
 
-  ShowHideMovieData = () =>{
+  ShowHideMovieData = (index) =>{
       if(this.state.status === true)
       {
           this.setState({status: false})
@@ -36,7 +36,7 @@ export default class MovieComponent extends Component {
 
     return (
 
-      <View style={StyleSheet.moviesList}>
+      <View style={styles.moviesList}>
         {this.props.movies.map((movie, index) => {
           return (
             <ScrollView key={index}>
@@ -88,8 +88,10 @@ MovieDataContainer: {
 
   moviesList: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    marginLeft: 40,
     
   },
   title: {
