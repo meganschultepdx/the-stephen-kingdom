@@ -26,7 +26,7 @@
 
 
 ## Setup/Installation Requirements
-* clone app from repo: coming soon
+* clone app from repo: [the-stephen-kingdom](https://github.com/meganschultepdx/the-stephen-kingdom)
 * make sure you have latest version of Node.js installed.
 * run $ npm install expo-cli --global in command line.
 * cd into project on command line.
