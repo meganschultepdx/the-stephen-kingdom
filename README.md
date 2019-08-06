@@ -6,20 +6,18 @@
 
   This mobile app will be a database for information on Stephen King related movies and mini-series. It will provide users with information specific to how the work is relate to Stephen King, be it writing, directing, or just being based off his literature. This information will be pulled from a Firebase database as a stretch goal. As a stretch goal it will also provide the user with information on where the movies can be viewed online by use of the Utelly API. Because I will be learning how to build a React Native app for the first time and would also like to incorporate some accessibility functions into the app, the content structure will be kept somewhat simple for MVP.
 
-## MVP goals
+## Current Features
 
-* splash screen with title, tagline, image and enter button on bottom nav bar that navigates to home screen.
-* Home screen with title, about section, movies and displayed in grid of cards that contain movie image, title and info for each movie.
-* text reader function.
-* Add some animation features to UI.
+* splash screen with title, tagline, image and bottom nav bar that navigates to movie info screen and about screen.
+* Movie info screen with title, brief app info section, movies posters imgages are displayed in grid that pulls uri image links from Firebase.
+* Clicking on movie poster pulls up more info about each movie, pulled from Firebase
+* Fade-in animation added to titles
 * Other cool styling 😎
-* Use Figma to mock up app styling
-* Some stretch goals might be easily moved up to MVP goals as I do more research and practice with building React Native app; tying to keep scope pretty simple to start. 
+* Basic about page with info on why I made app and list of fun facts about Stephen King.
 
 ## Stretch Goals
 
-* Movie cards are only the image and title, click on movie to open model with more information on it.
-* Movie info is pulled from Firebase.
+* Text reader function and other accessibility focus
 * Sort function for movies.
 * Search funtion for movies.
 * Add API call to Utelly so user can see where movie is able to be streamed.
