@@ -1,13 +1,12 @@
 import React from 'react';
-import { Platform, ActiveTintColor } from 'react-native';
+import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
 import SplashScreen from '../screens/SplashScreen';
 import MovieInfoScreen from '../screens/MovieInfoScreen';
 import AboutScreen from '../screens/AboutScreen';
-import { BorderlessButton } from 'react-native-gesture-handler';
-import { isUserWhitespacable } from '@babel/types';
+
 
 const config = Platform.select({
   web: { headerMode: 'screen' },

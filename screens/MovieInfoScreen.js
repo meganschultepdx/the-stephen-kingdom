@@ -5,11 +5,9 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
-  View,
 } from 'react-native';
 import MovieComponent from '../components/MovieComponent';
-import { db } from '../constants/FirebaseConfig';
+import { db } from '../FirebaseConfig';
 import FadeInView from '../components/FadeInView';
 import MovieInfoAboutBlurbs from '../components/MovieInfoAboutBlurbs';
 
