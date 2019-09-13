@@ -37,7 +37,7 @@ This mobile app will be a database for information on Stephen King related movie
 
 ## Component Tree/Project Planning
 
-![](assets/images/screenshots.pdf)
+![](assets/images/screenshots.jpg)
 
 ## Known Bugs
 
