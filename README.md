@@ -35,7 +35,7 @@ This mobile app will be a database for information on Stephen King related movie
 - Open project in your favorite text editor to make changes. Any changes you make will automatically appear on your device as long as project is running.
 - Check out [Expo](https://expo.io/) for help with any issues.
 
-## Component Tree/Project Planning
+## Screen Shots of Mobile App pages
 
 ![](assets/images/screenshots.png)
 
